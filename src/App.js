@@ -1,11 +1,11 @@
-import Header from "./component/Header.jsx"
+import Navbar from './component/Navbar'
 
 const App = () => {
   return (
     <>
-     <Header  />
+    <Navbar/>
     </>
   )
 }
 
-export default App
+export default App;
