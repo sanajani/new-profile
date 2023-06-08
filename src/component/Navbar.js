@@ -1,17 +1,15 @@
 import { NavLink } from 'react-router-dom'
-// import { useState } from 'react'
-
 
 const Navbar = () => {
 
   return (
     <div className="bg-transparent fixed top-0 left-0 w-screen z-10">
       <nav className="max-w-[1200px] py-3 mx-auto">
-        <ul className="flex justify-center items-center gap-10">
-          <li ><NavLink to='/' className={`text-white md:text-2xl text-1xl`} >Home</NavLink></li>
-          <li ><NavLink to='/about'className={`text-white md:text-2xl text-1xl`}>About</NavLink></li>
-          <li ><NavLink to='/project'className={`text-white md:text-2xl text-1xl`}>Project</NavLink></li>
-          <li ><NavLink to='/contact'className={`text-white md:text-2xl text-1xl`}>Contact</NavLink></li>
+        <ul className="flex justify-center items-center">
+          <li className='hover:bg-[#1a1a1a] py-2 px-6 rounded-[5px]'><NavLink to='/' className="text-gray-400 md:text-2xl text-1xl">Home</NavLink></li>
+          <li className='hover:bg-[#111111] py-2 px-6 rounded-[5px]'><NavLink to='/about'className="text-gray-400 md:text-2xl text-1xl">About</NavLink></li>
+          <li className='hover:bg-[#111111] py-2 px-6 rounded-[5px]'><NavLink to='/project'className="text-gray-400 md:text-2xl text-1xl">Project</NavLink></li>
+          <li className='hover:bg-[#111111] py-2 px-6 rounded-[5px]'><NavLink to='/contact'className="text-gray-400 md:text-2xl text-1xl">Contact</NavLink></li>
         </ul>
       </nav>
     </div>
