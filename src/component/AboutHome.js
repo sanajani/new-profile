@@ -11,7 +11,7 @@ const AboutHome = () => {
                 About Me
             </h1>
             <p className='text-[#a7a7a7] leading-snug text-[20px] font-mono'>
-            I am a freelance website designer and developer from Chittagong, Bangladesh. I create professional websites. I love art and always try to show unique views to the audience through my design.
+            I am a freelance website designer and developer from Herat, Afghanistan. I create professional websites. I love art and always try to show unique views to the audience through my design.
             </p>
             <Link className='inline-block text-3xl border-2 rounded text-[#262626] bg-gray-200 border-gray-200 mt-8 mr-4 py-2 px-8'  to='/about'>Works</Link>
             <Link className='inline-block text-3xl border-2 rounded text-gray-200 border-gray-200 mt-8 ml-4 py-2 px-8' to='/about'>read more</Link>
