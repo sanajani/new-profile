@@ -3,7 +3,7 @@ import {router} from './router/index'
 
 const App = () => {
   return (
-    <RouterProvider router={router}/>
+        <RouterProvider router={router}/>
   )
 }
 
