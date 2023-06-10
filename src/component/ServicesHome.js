@@ -3,15 +3,18 @@ import ServicesComp from "./ServicesComp"
 const data = [
     {
         title:"Web Design",
-        para:"I do ui/ux design for the website that helps website to get a unique look."
+        para:"I do ui/ux design for the website that helps website to get a unique look.",
+        key:1,
     },
     {
         title:"Web Design",
-        para:"I do ui/ux design for the website that helps website to get a unique look."
+        para:"I do ui/ux design for the website that helps website to get a unique look.",
+        key:2,
     },
     {
         title:"Web Design",
-        para:"I do ui/ux design for the website that helps website to get a unique look."
+        para:"I do ui/ux design for the website that helps website to get a unique look.",
+        key:3,
     },
 ]
 
@@ -21,10 +24,12 @@ const ServicesHome = () => {
             <h1 className="text-[60px] uppercase font-mono font-bold tracking-wider text-gray-300"><span className="block text-2xl lowercase tracking-normal">What I will do for you</span>
                 Services
             </h1>
-            <div className="w-[80%] gap-6 mx-auto flex mt-10">
-              <ServicesComp title={data[0].title} para={data[0].para} />
-              <ServicesComp title={data[1].title} para={data[1].para} />
-              <ServicesComp title={data[2].title} para={data[2].para} />
+            <div className="w-[1100px] gap-8 mx-auto flex mt-10">
+              {
+                data.map((item,index) => {
+                    return <ServicesComp item={item} key={item.key} />
+                })
+              }
             </div>
         </div>
     )

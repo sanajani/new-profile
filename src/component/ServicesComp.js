@@ -1,6 +1,7 @@
 
-const ServicesComp = ({icons,title,para}) => {
-    console.log(title);
+const ServicesComp = ({item}) => {
+    console.log(item);
+    const {title,para} = item
   return (
     <div>
     <h1 className="text-center text-[1.7rem] font-medium text-gray-300"> {title}</h1>
