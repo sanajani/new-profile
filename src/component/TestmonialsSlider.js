@@ -50,7 +50,7 @@ const TestmonialsSlider = () => {
   return (
     <div className="max-w-[1140px] mx-auto">
       <div>
-        <h1 className=" text-center text-xl lg:text-5xl font-bold text-gray-300 tracking-widest"><span className="block md:text-2xl text-xl tracking-normal font-light my-2 font-mono ">see what our clients say about us</span> TESTIMONIALS</h1>
+        <h1 className=" text-center text-2xl lg:text-5xl font-bold text-gray-300 tracking-widest"><span className="block md:text-2xl text-xl tracking-normal font-light mt-12 md:my-2 font-mono ">see what our clients say about us</span> TESTIMONIALS</h1>
       </div>
       <Carousel
         responsive={responsive}
