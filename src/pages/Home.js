@@ -2,6 +2,7 @@ import Header from "../component/Header";
 import AboutHome from "../component/AboutHome";
 import ServicesHome from "../component/ServicesHome";
 import ProjectsHome from "../component/ProjectsHome";
+import TestmonialsSlider from "../component/TestmonialsSlider";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <AboutHome/>
       <ServicesHome/>
       <ProjectsHome/>
+      <TestmonialsSlider/>
     </main>
   )
 }

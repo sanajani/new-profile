@@ -32,7 +32,6 @@ const ProjectsHome = () => {
                 responsive={responsive}
                 autoPlay={true}
                 infinite={true}
-                // autoPlaySpeed={1000}
                 keyBoardControl={true}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 >
