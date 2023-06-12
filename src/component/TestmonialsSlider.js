@@ -50,7 +50,7 @@ const TestmonialsSlider = () => {
   return (
     <div className="max-w-[1140px] mx-auto">
       <div>
-        <h1 className=" text-center text-xl lg:text-2xl font-bold text-gray-300 tracking-widest"><span className="block tracking-normal font-light my-2">What clients say about me</span> Review</h1>
+        <h1 className=" text-center text-xl lg:text-5xl font-bold text-gray-300 tracking-widest"><span className="block md:text-2xl text-xl tracking-normal font-light my-2 font-mono ">see what our clients say about us</span> TESTIMONIALS</h1>
       </div>
       <Carousel
         responsive={responsive}
@@ -58,6 +58,7 @@ const TestmonialsSlider = () => {
         keyBoardControl={true}
         removeArrowOnDeviceType={["tablet", "mobile"]}
         autoPlaySpeed={3000}
+        infinite={true}
       >
         {testMonials_data.map((data) => {
           return <Testmonials data={data} />;
