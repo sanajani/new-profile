@@ -17,8 +17,8 @@ const Footer = () => {
             performance rate.
           </p>
         </div>
-        <div className="my-5 w-full px-10 sm:w-1/4">
-          <h2 className="text-3xl my-3 font-semibold  md:text-2xl">
+        <div className="my-5 w-full px-10 md:px-0  sm:w-1/4">
+          <h2 className="text-3xl my-3 font-semibold  md:text-2xl w-full">
             Importent Links
           </h2>
           <ul>
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="my-5 w-full px-10 sm:w-1/4">
+        <div className="my-5 w-full sm:mb-12 px-10 sm:w-1/4">
           <h2 className="text-3xl my-3 font-semibold  md:text-2xl">
             Social Links
           </h2>
