@@ -1,7 +1,9 @@
-
+import ProjectComponent from "../component/ProjectComponent"
 const Project = () => {
     return (
-      <div>Project</div>
+      <div>
+        <ProjectComponent/>
+      </div>
     )
   }
   
