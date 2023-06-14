@@ -61,7 +61,7 @@ const TestmonialsSlider = () => {
         infinite={true}
       >
         {testMonials_data.map((data) => {
-          return <Testmonials data={data} />;
+          return <Testmonials data={data} key={data.id} />;
         })}
       </Carousel>
     </div>
