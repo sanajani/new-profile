@@ -5,12 +5,6 @@ import { useState } from "react";
 
 const ContactMainComp = () => {
 
-  const config = {
-    Host: "smtp.elasticemail.com",
-    Username: "webdevfarsi12345@yopmail.com",
-    Password: "CFD3630E04A69228FDB8B79CC8F99344312D",
-  }
-
   const [inputValue, setInputValue] = useState({
     name: "",
     email: "",
@@ -23,25 +17,6 @@ const ContactMainComp = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
-    if (!inputValue.name || !inputValue.email || !inputValue.message) return alert("All the fields are required");
-    else if (window.Email) {
-      window.Email.send({
-        ...config,
-        From: inputValue.email,
-        To: "webdevfarsi@gmail.com",
-        Subject: inputValue.name,
-        Body: inputValue.message,
-        port: 2525
-      }).then(
-        message => console.log(message)
-      );
-      // setInputValue({
-      //   name:'',
-      //   email:'',
-      //   message:""
-      // })
-    }
-
   }
 
 
