@@ -17,7 +17,7 @@ const ContactMainComp = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:9001/gmail/sendemail', {
+    await axios.post('/gmail/sendemail', {
       userName: inputValue.name,
       userEmail: inputValue.email,
       userMessage: inputValue.message
@@ -26,14 +26,14 @@ const ContactMainComp = () => {
         "Content-Type": "application/json"
       }
     }).then((data) => {
-      console.log(data);
+      alert(data);
       setInputValue({
         name:"",
         email:"",
         message:''
       })
     }).catch((error) => {
-      console.log(error);
+      alert(error);
     })
   }
 

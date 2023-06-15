@@ -1,6 +1,5 @@
 
 const SliderHome = ({projectInfos}) => {
-    console.log(projectInfos);
     const {name,desc,img} = projectInfos;
     return (
         <div className="w-full px-2">

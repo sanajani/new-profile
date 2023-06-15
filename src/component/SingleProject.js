@@ -2,7 +2,7 @@
 const SingleProject = ({project}) => {
   const {name,desc,img} = project;
   return (
-    <div className="">
+    <div className="my-5 md:my-10 ">
       <img
         src={img}
         className="h-[400px] max-[420px] object-cover p-1 rounded-lg border-2 w-full border-gray-300"

@@ -39,11 +39,6 @@ const ProjectComponent = () => {
             Projects
           </span>
         </h1>
-        <input
-          type="text"
-          className="md:ml-3 w-[100%] md:w-[350px] p-2 rounded-md outline-none text-xl"
-          placeholder="Search Projects"
-        />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-3">
         {
