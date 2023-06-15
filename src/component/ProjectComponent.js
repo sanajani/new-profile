@@ -1,5 +1,34 @@
 import SingleProject from "./SingleProject";
 
+const projectInfo = [
+  {
+    name:"Fylo",
+    desc:"Fylo is a single page web template with beautiful design and responsive",
+    img:"./assets/dk-1.jpg",
+    id:1
+  },
+  {
+    name:"Huddle",
+    desc:"Huddle is a single page web template with beautiful design and responsive",
+    img:"./assets/dk-2.jpg",
+    id: 2
+  },
+  {
+    name:"Price Page",
+    desc:"This one is single page price template responsive and cool looking webpage design ",
+    img:"./assets/dk-4.jpg",
+    id: 3
+  },
+  {
+    name:"Sign Up Page",
+    desc:"This one is single page Signup form template responsive and cool looking webpage design",
+    img:"./assets/dk-5.jpg",
+    id: 4
+  },
+]
+
+
+
 const ProjectComponent = () => {
   return (
     <div className="min-h-screen max-w-[1140px] md:mx-auto mx-5 overflow-hidden">
@@ -17,10 +46,11 @@ const ProjectComponent = () => {
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-3">
-        <SingleProject />
-        <SingleProject />
-        <SingleProject />
-        <SingleProject />
+        {
+          projectInfo.map((singleproject) => {
+            return <SingleProject project={singleproject} key={singleproject.id} />
+          })
+        }
       </div>
     </div>
   );
