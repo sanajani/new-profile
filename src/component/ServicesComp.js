@@ -1,5 +1,4 @@
 const ServicesComp = ({ item }) => {
-  console.log(item);
   const { title, para, Img } = item;
   return (
     <div className="flex flex-col justify-center items-center">

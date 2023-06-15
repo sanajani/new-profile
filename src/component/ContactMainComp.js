@@ -1,7 +1,7 @@
 import { HiPhone, HiOutlineMail } from "react-icons/hi";
 import { TbMapPinFilled } from "react-icons/tb";
 import { useState } from "react";
-
+import axios from 'axios'
 
 const ContactMainComp = () => {
 
@@ -17,6 +17,24 @@ const ContactMainComp = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
+    await axios.post('http://localhost:9001/gmail/sendemail', {
+      userName: inputValue.name,
+      userEmail: inputValue.email,
+      userMessage: inputValue.message
+    }, {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then((data) => {
+      console.log(data);
+      setInputValue({
+        name:"",
+        email:"",
+        message:''
+      })
+    }).catch((error) => {
+      console.log(error);
+    })
   }
 
 
